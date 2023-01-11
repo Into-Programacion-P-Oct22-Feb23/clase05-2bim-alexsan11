@@ -13,18 +13,17 @@ public class Ejemplo08 {
         // Ingresar por teclado los valores enteros del arreglo
         // Sumar los valores del arreglo, mediante la función misterio
         Scanner entrada = new Scanner(System.in);
-      
+
         System.out.println("Ingrese el tamaño de un arreglo");
         int valor = entrada.nextInt();
-        int[] arreglo = new int[valor]; 
+        int[] arreglo = new int[valor];
         for (int i = 0; i < valor; i++) {
             System.out.println("Ingrese valores enteros para el arreglo");
             arreglo[i] = entrada.nextInt();
-            
+
         }
         System.out.printf("\nEl total es:%d\n",
-                misterio (arreglo, arreglo.length)
-        );
+                misterio(arreglo, arreglo.length));
     }
 
     public static int misterio(int[] arreglo, int tamanio) {
